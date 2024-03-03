@@ -4,6 +4,7 @@ import UiSceneDialog from './ui-scene-dialog/index.vue';
 import UiSceneDrawer from './ui-scene-drawer/index.vue';
 import UiSceneQuery from './ui-scene-query/index.vue';
 import UiScheme from './ui-scheme/index.vue';
+import UiTable from './ui-table/index.vue';
 
 const commonComponents: Record<string, any> = {
   UiScheme,
@@ -12,6 +13,7 @@ const commonComponents: Record<string, any> = {
   UiSceneDialog,
   UiQuery,
   UiComponents,
+  UiTable,
 };
 
 export default {

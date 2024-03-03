@@ -2,12 +2,10 @@
   "name": "web-cli",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build --mode production",
-    "type-check": "vue-tsc --noEmit",
-    "eslint": "eslint . --ext .ts",
+    "pkg:ui": "node ./build/package/index.js ui",
     "commit": "cz"
   },
   "config": {
