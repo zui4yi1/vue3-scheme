@@ -25,8 +25,8 @@
 </script>
 
 <script setup lang="ts">
-  import ExDialog from '@/components/ex-dialog/index.vue';
   import { ComponentInternalInstance, getCurrentInstance, nextTick, ref } from 'vue';
+  import ExDialog from '../../components/ex-dialog/index.vue';
   import { IOpenDialog } from './_props';
 
   /**

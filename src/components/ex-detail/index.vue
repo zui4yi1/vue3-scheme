@@ -1,6 +1,6 @@
 <template>
   <div class="ex-detail">
-    <template v-for="(scheme, inx1) in schemes">
+    <template v-for="(scheme, inx1) in schemes" :key="'detail_' + inx1">
       <!--各块的header标题-->
       <template v-if="scheme.head">
         <component

@@ -20,8 +20,8 @@
 </script>
 
 <script setup lang="ts">
-  import ExDrawer from '@/components/ex-drawer/index.vue';
   import { ComponentInternalInstance, getCurrentInstance, nextTick, ref } from 'vue';
+  import ExDrawer from '../../components/ex-drawer/index.vue';
   import { IOpenDrawer } from './_props';
 
   /**
