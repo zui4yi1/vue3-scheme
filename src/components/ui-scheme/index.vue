@@ -17,12 +17,14 @@
         <!--各块的header标题-->
         <template v-if="scheme.head">
           <component
+            :key="'head_' + inx1"
             v-if="typeof scheme.head === 'string'"
             :is="scheme.head"
             v-bind="scheme.headProps"
           />
           <UiComponents
             v-else
+            :key="'head2_' + inx1"
             :components="[scheme.head]"
             :type="scheme.head.name"
             :props="scheme.headProps"
@@ -172,6 +174,13 @@
 
   function reset() {
     form.value = getInitVal();
+    clearValidate();
+  }
+
+  function clearValidate() {
+    setTimeout(() => {
+      formRef.value?.clearValidate();
+    }, 300);
   }
 
   /** 校验并获取表单值 */
@@ -274,5 +283,6 @@
     setPropVal,
     getInitVal,
     findSchemeItem,
+    clearValidate,
   });
 </script>

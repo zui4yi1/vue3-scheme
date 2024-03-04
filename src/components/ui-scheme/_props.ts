@@ -16,6 +16,7 @@ export interface IUIScheme<T = any> {
   setPropVal: (prop: string, val: any) => void;
   getInitVal: () => T;
   findSchemeItem: (scheme: IScheme[], prop: string) => ISchemeItem | null;
+  clearValidate: () => void;
 }
 
 /**

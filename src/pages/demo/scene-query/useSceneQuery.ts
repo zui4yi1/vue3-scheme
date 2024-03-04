@@ -36,6 +36,8 @@ export const useSceneQueryHook = defineStore('store-demo-query', () => {
 
   function reset() {
     curUser.value = {};
+    // 移除检验
+    uiSchemeRef.value.clearValidate?.();
   }
   onBeforeMount(async () => {
     reset();
